@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<meta name="description" content="">
+  	<meta name="author" content="">
+
+  	<title>Spring MVC / Thymeleaf</title>
+</head>
+<body>
+	<div class="container-fluid">
+		<h1 class="mt-4">Formulario de Ingreso de Alumnos</h1>
+		<div class="card mb-4">
+			<div class="card-body">
+				<p class="mb-0">Ingrese las credenciales</p>
+				<form method="post" th:action= "@{/parametros1}">
+					<label for="nombres">Nombres: </label>
+					<input id="nombres" name="nombres" type="text" required>
+					
+					<label for="apellidos">Apellidos: </label>
+					<input id="apellidos" name="apellidos" type="text" required>
+					<br>
+					<label for="fecha_nacimiento">Fecha de nacimiento: </label>
+					<input id="fecha_nacimiento" name="fecha_nacimiento" type="date" required>
+					<br>
+					<label for="lugar_nacimiento">Lugar de nacimiento: </label>
+					<input id="lugar_nacimiento" name="lugar_nacimiento" type="text" required>
+					<br>
+					<label for="colegio">Instituto o Colegio de procedencia: </label>
+					<input id="colegio" name="colegio" type="text" required>
+					<br>
+					<label for="tel_fijo">Tel&eacute;fono fijo</label>
+					<input id="tel_fijo" name="tel_fijo" type="tel" required>
+					<br>
+					<label for="tel_movil">Tel&eacute;fono m&oacute;vil</label>
+					<input id="tel_movil" name="tel_movil" type="tel" required>
+					<br>
+					
+					<input type="submit" value="Guardar Alumno">
+				</form>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
